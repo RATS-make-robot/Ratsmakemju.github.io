@@ -142,6 +142,7 @@
             </script>
         </div>
 
+        <!--
         <div id="experiences">
             <section>
                 <h2>Experiences</h2>
@@ -232,14 +233,27 @@
                         <div class="competition-row"><span class="competition-title">2020 서울과학기술대학교 공학교육 거점센터 창의적 종합설계
                                 경진대회</span><span class="award-list"><code>✨장려상</code></span></div>
                     </div>
-                </div>
-                <!-- Include experiences -->
-                <!--<div id="experiences">
-             Experiences content will be dynamically included
+                </div>-->
+        <!-- Include experiences -->
+        <div id="experiences">
+            <!--Experiences content will be dynamically included-->
             <script>
-                fetch('experiences.html').then(res => res.text()).then(data => document.getElementById('experiences').innerHTML = data);
-            </script>-->
-            </section>
+                //fetch('experiences.html').then(res => res.text()).then(data => document.getElementById('experiences').innerHTML = data);
+                fetch('experiences.html')
+                    .then(res => res.text())
+                    .then(data => {
+                        console.log('HTML 로드 완료:', data);
+                        document.getElementById('experiences').innerHTML = data;
+                        console.log('콘텐츠 삽입 완료');
+                        // 콘텐츠 로드 후 클래스 추가
+                        experiencesElement.classList.add('visible');
+                        // 리렌더링 강제 트리거 (선택 사항)
+                        experiencesElement.style.display = 'none';
+                        experiencesElement.offsetHeight; // 강제 Reflow
+                        experiencesElement.style.display = 'block';
+                    })
+                    .catch(error => console.error('Error loading experiences.html:', error));
+            </script>
         </div>
 
         <!-- Include projects -->
@@ -285,7 +299,7 @@
     <script src="assets/js/load_seminars.js"></script>
     <script src="assets/js/filter_projects.js"></script>
 </body>
-
+<!--
 <style>
     /* 경험 카드 컨테이너 */
     .experience-container {
@@ -340,5 +354,6 @@
         /* 코딩 폰트 */
     }
 </style>
+-->
 
 </html>
