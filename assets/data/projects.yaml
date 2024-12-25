@@ -100,7 +100,8 @@ projects:
         tags: ["2023"]
         duration: "2023년"
         links:
-          youtube: "https://youtu.be/LbtAhwIs7Gw?si=Ekr9utt-6iYukdWk"
+          other: "https://youtu.be/LbtAhwIs7Gw?si=Ekr9utt-6iYukdWk"
+          other_logo: "assets/images/sections/projects/2023/aci.jpg"
 
       - title: "COMPANION ROBOT"
         description: "독거노인을 위한 반려로봇으로 안전과 건강을 지원."
@@ -122,9 +123,11 @@ projects:
       - title: "LH(Land & Housing for Reptiles & Amphibians)"
         description: "도마뱀 사육장 환경 자동 관리 및 커스텀 환경"
         team: "탁지훈, 방승재, 서호준"
+        image: "assets/images/sections/projects/2023/lh.jpg"
         tags: ["2023"]
         duration: "2023년 3월 ~ 2023년 8월"
         links:
+          youtube: "https://www.youtube.com/watch?v=Uu4Es1RrDkw"
           github: "https://github.com/SeungJae928/2023ESWContest_free_1012"
 
       - title: "족발2"
