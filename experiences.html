@@ -146,8 +146,18 @@
         font-weight: bold;
         /* 대회명 강조 */
         color: #333;
+        word-break: keep-all;
+        /* 한글 단어 끊어짐 방지 */
+        white-space: normal;
+        /* 기본 줄바꿈 */
+        overflow-wrap: break-word;
+        /* 긴 단어 줄바꿈 */
     }
 
+    .award-list {
+  display: flex;
+  flex-direction: column;
+    }
     .award-list code {
         background-color: #f5f5f5;
         /* 밝은 회색 배경 */
@@ -157,9 +167,12 @@
         /* 둥근 모서리 */
         font-family: 'Courier New', Courier, monospace;
         /* 코딩 폰트 */
-        word-break: keep-all; /* 한글 단어 끊어짐 방지 */
-        white-space: normal; /* 기본 줄바꿈 */
-        overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+        word-break: keep-all;
+        /* 한글 단어 끊어짐 방지 */
+        white-space: nowrap;
+        /* 기본 줄바꿈 */
+        overflow-wrap: normal;
+        /* 긴 단어 줄바꿈 */
     }
 </style>
 
