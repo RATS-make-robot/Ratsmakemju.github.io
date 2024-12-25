@@ -172,6 +172,19 @@ projects:
         tags: ["2022"]
         duration: "2022년"
 
+      - title: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
+        description: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
+        team: "이한얼, 김규목"
+        image: "assets/images/sections/projects/2022/dart.gif"
+        tags: ["2022"]
+        duration: "2022년"
+
+      - title: "강화학습 기반 4족보행 제어"
+        description: "강화학습 기반 4족보행 제어"
+        team: "김성현"
+        tags: ["2022"]
+        duration: "2022년"
+    
       - title: "동아리 웹사이트"
         description: "동아리 홍보를 위한 정적 페이지, 커뮤니티, 클라우드 개발 | (이후 RATS회장단에서 관리)"
         team: "김성현, 황규도"
@@ -191,11 +204,12 @@ projects:
       - title: "족발"
         description: "강아지 의족(ver 1)"
         team: "이상수, 김영찬, 신희성, 정승주"
+        image: "assets/images/sections/projects/2022/jokbal.jpg"
         tags: ["2022"]
         duration: "2022년 3월 ~ 2022년 12월"
 ############################################################################################
 
-  - year: "2022년도"
+  - year: "2021년도"
     projects:
       - title: "씨름 로봇"
         description: "상대 로봇 탐지 및 밀어내기 기능 구현."
@@ -214,7 +228,7 @@ projects:
           other: "https://play.google.com/store/apps/details?id=com.mba.busapp"
 
 ############################################################################################
-  - year: "2021년도"
+  - year: "2020년도"
     projects:
       - title: "자이로스코프 드론"
         description: "자이로스코프 형태의 드론 가드 설계."
