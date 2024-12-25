@@ -130,6 +130,7 @@ projects:
       - title: "족발2"
         description: "후지 마비 동물을 위한 웨어러블 로봇"
         team: "이상수, 김영찬, 안재영, 권인아, 오은지, 이준영"
+        image: "assets/images/sections/projects/2023/jokbal.jpg"
         tags: ["2023"]
         duration: "2023년 7월 ~ 2023년 12월"
         links:
