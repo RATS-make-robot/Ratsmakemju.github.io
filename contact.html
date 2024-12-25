@@ -1,10 +1,79 @@
-<!-- contact.html -->
 <section id="contact">
     <h2>Contact Us</h2>
     <p>문의사항이 있으시면 언제든 연락 주세요!</p>
-    <ul>
-        <li>Email: <a href="mailto:mjurats.official@gmail.com">mjurats.official@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/RATS-make-robot" target="_blank">RATS-make-robot</a></li>
-        <li>Instagram: <a href="https://www.instagram.com/mjurats" target="_blank">@mjurats</a></li>
+    <ul class="contact-list">
+        <li>
+            <span> <a href="mailto:mjurats.official@gmail.com">
+            <img class="link-icon" src="assets/images/icons/gmail.svg" alt="Gmail" /> mjurats.official@gmail.com</a></span>
+        </li>
+        <li>
+            <span> <a href="https://github.com/RATS-make-robot" target="_blank">
+            <img class="link-icon" src="assets/images/icons/github-mark.svg" alt="GitHub" /> RATS-make-robot</a></span>
+        </li>
+        <li>
+            <span> <a href="https://www.instagram.com/mjurats" target="_blank">
+            <img class="link-icon" src="assets/images/icons/instagram.svg" alt="Instagram" /> @mjurats</a></span>
+        </li>
     </ul>
 </section>
+
+<style>
+#contact {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-list img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+    color: #0056a3;
+}
+
+.contact-list span {
+    font-size: 1rem;
+    color: #333;
+}
+</style>
