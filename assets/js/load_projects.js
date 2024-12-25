@@ -77,15 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                         otherLink.style.textAlign = "center";
                                         otherLink.style.fontWeight = "bold";
                                         otherLink.style.textDecoration = "none"; // 밑줄 제거
+
+                                        otherLink.addEventListener('mouseover', () => {
+                                            otherLink.style.backgroundColor = "#0056b3"; // 버튼 hover 효과
+                                        });
+                                        otherLink.addEventListener('mouseout', () => {
+                                            otherLink.style.backgroundColor = "#007bff"; // 기본 색상 복원
+                                        });
                                     }
-
-                                    otherLink.addEventListener('mouseover', () => {
-                                        otherLink.style.backgroundColor = "#0056b3"; // 버튼 hover 효과
-                                    });
-                                    otherLink.addEventListener('mouseout', () => {
-                                        otherLink.style.backgroundColor = "#007bff"; // 기본 색상 복원
-                                    });
-
                                     linksContainer.appendChild(otherLink);
                                 }
 
