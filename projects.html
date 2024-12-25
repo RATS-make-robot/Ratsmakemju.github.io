@@ -50,6 +50,7 @@
     display: flex;
     gap: 20px;
     overflow-y: hidden; /* 세로 스크롤 비활성화 */
+    overflow-x: hidden;
     padding: 10px;
 }  
 
@@ -64,7 +65,7 @@
     /*animation: scroll-loop 20s linear infinite;*/
 }
 .project-group:hover {
-animation-play-state: paused; /* hover 시 애니메이션 일시 중지 */
+    animation-play-state: paused; /* hover 시 애니메이션 일시 중지 */
 }
 .project-group::-webkit-scrollbar {
     height: 6px; /* 스크롤바 높이 */
@@ -79,10 +80,14 @@ animation-play-state: paused; /* hover 시 애니메이션 일시 중지 */
     background: #555; /* 스크롤바 호버 색상 */
 }
 .project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     flex: 0 0 auto; /* 카드 크기 고정 */
     width: 300px;
     min-height: 250px; /* 최소 높이 */
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-card:hover {
