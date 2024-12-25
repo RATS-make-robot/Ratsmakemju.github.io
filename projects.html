@@ -18,149 +18,151 @@
 
 <!-- CSS -->
 <style>
-    .filter-buttons {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .filter-btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .filter-btn.active {
-        background-color: #0056b3;
-    }
-
-    .filter-btn:hover {
-        background-color: #0056b3;
-    }
-
-    .project-container {
-        flex-direction: column; /* 연도별로 세로 배치 */
-    }
-
-    .project-scroll-container {
-        display: flex;
-        gap: 20px;
-        overflow-y: hidden; /* 세로 스크롤 비활성화 */
-        padding: 10px;
-    }  
-    
-    .project-group {
-        display: flex;
-        flex-wrap: nowrap; /* 한 줄에 모든 카드 배치 */
-        overflow-x: auto; /* 가로 스크롤 활성화 */
-        gap: 20px;
-        padding: 10px;
-        scrollbar-width: thin; /* 간소화된 스크롤바 */
-        -ms-overflow-style: none; /* IE에서 스크롤 숨김 */
-        /*animation: scroll-loop 20s linear infinite;*/
-    }
-    .project-group:hover {
-    animation-play-state: paused; /* hover 시 애니메이션 일시 중지 */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
 }
-    .project-group::-webkit-scrollbar {
-        display: none; /* 크롬, 사파리 스크롤 숨김 */
-    }
-    .project-group::-webkit-scrollbar-thumb {
+
+.filter-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+    background-color: #0056b3;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.project-container {
+    flex-direction: column; /* 연도별로 세로 배치 */
+}
+
+.project-scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden; /* 세로 스크롤 비활성화 */
+    padding: 10px;
+}  
+
+.project-group {
+    display: flex;
+    flex-wrap: nowrap; /* 한 줄에 모든 카드 배치 */
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    gap: 20px;
+    padding: 10px;
+    scrollbar-width: thin; /* 간소화된 스크롤바 */
+    -ms-overflow-style: none; /* IE에서 스크롤 숨김 */
+    /*animation: scroll-loop 20s linear infinite;*/
+}
+.project-group:hover {
+animation-play-state: paused; /* hover 시 애니메이션 일시 중지 */
+}
+.project-group::-webkit-scrollbar {
+    height: 6px; /* 스크롤바 높이 */
+    background: #f1f1f1; /* 스크롤바 배경색 */
+    /*display: none;  크롬, 사파리 스크롤 숨김 */
+}
+.project-group::-webkit-scrollbar-thumb {
     background: #888; /* 스크롤바 색상 */
-    border-radius: 4px;
+    border-radius: 4px; /* 둥근 모서리 */
 }
 .project-group::-webkit-scrollbar-thumb:hover {
     background: #555; /* 스크롤바 호버 색상 */
 }
-    .project-card {
-        flex: 0 0 auto; /* 카드 크기 고정 */
-        width: 300px;
-        min-height: 250px; /* 최소 높이 */
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
+.project-card {
+    flex: 0 0 auto; /* 카드 크기 고정 */
+    width: 300px;
+    min-height: 250px; /* 최소 높이 */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .project-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-    .project-btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+.project-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-    .project-card h3 {
-        text-align: center;
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-        color: #333;
-    }
+.project-card h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-    .project-image {
-        display: block; /* 이미지를 블록 요소로 설정 */
-        margin: 0 auto; /* 좌우 여백을 자동으로 설정해 가운데 정렬 */
-        width: auto;
-        max-width: 300px;
-        height: 10em;
-        border-radius: 5px;
-        margin-bottom: 15px; /* 이미지와 텍스트 간 간격 */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+.project-image {
+    display: block; /* 이미지를 블록 요소로 설정 */
+    margin: 0 auto; /* 좌우 여백을 자동으로 설정해 가운데 정렬 */
+    width: auto;
+    max-width: 300px;
+    height: 10em;
+    border-radius: 5px;
+    margin-bottom: 15px; /* 이미지와 텍스트 간 간격 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    .project-card p {
-        text-align: center;
-        font-size: 1rem;
-        color: #555;
-        margin-bottom: 10px;
-        margin: 5px 0; /* 텍스트 간의 상하 간격 설정 */
-        line-height: 1.2; /* 줄 높이 설정 */
-        word-break: keep-all; /* 한글 단어 끊어짐 방지 */
-        white-space: normal; /* 기본 줄바꿈 */
-        overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
-    }
+.project-card p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    margin: 5px 0; /* 텍스트 간의 상하 간격 설정 */
+    line-height: 1.2; /* 줄 높이 설정 */
+    word-break: keep-all; /* 한글 단어 끊어짐 방지 */
+    white-space: normal; /* 기본 줄바꿈 */
+    overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+}
 
-    .links-container {
-        display: flex;
-        justify-content: center;
-        gap: 30px; /* 링크 간 간격 */
-        margin-top: 15px;
-    }
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* 링크 간 간격 */
+    margin-top: 15px;
+}
 
-    .link-icon {
-        width: 50px;
-        height: auto;
-        transition: transform 0.3s;
-    }
+.link-icon {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s;
+}
 
-    .link-icon:hover {
-        transform: scale(1.2); /* 아이콘 확대 효과 */
-    }
+.link-icon:hover {
+    transform: scale(1.2); /* 아이콘 확대 효과 */
+}
 
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-    @keyframes scroll-loop {
+@keyframes scroll-left {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
+}
+
+@keyframes scroll-loop {
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(-50%);
+}
 }
 </style>
