@@ -218,6 +218,8 @@ projects:
         image: "assets/images/sections/projects/2022/jokbal.jpg"
         tags: ["2022"]
         duration: "2022년 3월 ~ 2022년 12월"
+        links:
+          youtube: "https://www.youtube.com/watch?v=Qg1aSdmr12A"
 
       - title: "Balancing Robot"
         description: "PID, PCB설계, MQTT, NodeJS서버 등 사용"
