@@ -166,9 +166,9 @@ projects:
           github: "https://github.com/js4ngu/22_HanEum_Forest-Fire-Extinguishing-Assistance-System"
 
       - title: "난청환자를 위한 방향알림 장치"
-        description: "난청환자를 위한 방향알림 장치."
+        description: "4개의 마이크와 8개의 진동 모듈을 장착하여 8방향을 알려줌. 센서, STM32 실장 PCB 직접 제작"
         team: "김태수(총 6명)"
-        image: "https://eciems.mju.ac.kr/sites/eciems/atchmnfl/bbs/1318/thumbnail/thumb_temp_1669683356637100.jpg"
+        image: "assets/images/sections/projects/2022/sound.jpg"
         tags: ["2022"]
         duration: "2022년"
 
@@ -185,14 +185,6 @@ projects:
         tags: ["2022"]
         duration: "2022년"
     
-      - title: "동아리 웹사이트"
-        description: "동아리 홍보를 위한 정적 페이지, 커뮤니티, 클라우드 개발 | (이후 RATS회장단에서 관리)"
-        team: "김성현, 황규도"
-        tags: ["2022"]
-        duration: "2022년 ~"
-        links:
-          github: "https://github.com/RATS-make-robot/RATS-make-robot.github.io"
-
       - title: "Valve 인덱스 컨트롤러를 이용한 UR3 매니퓰레이터 제어 "
         description: "밸브사의 index VR 을 이용한 UR3 로봇암 원격 조종"
         team: "김성현"
@@ -201,10 +193,25 @@ projects:
         links:
           other: "https://community.mju-rats.com/t/valve-ur3/278"
 
+      - title: "동아리 웹사이트"
+        description: "동아리 홍보를 위한 정적 페이지, 커뮤니티, 클라우드 개발 | (이후 RATS회장단에서 관리)"
+        team: "김성현, 황규도"
+        tags: ["2022"]
+        duration: "2022년 ~"
+        links:
+          github: "https://github.com/RATS-make-robot/RATS-make-robot.github.io"
+
       - title: "족발"
         description: "강아지 의족(ver 1)"
         team: "이상수, 김영찬, 신희성, 정승주"
         image: "assets/images/sections/projects/2022/jokbal.jpg"
+        tags: ["2022"]
+        duration: "2022년 3월 ~ 2022년 12월"
+
+      - title: "그림 그리는 CNC"
+        description: "G-CODE를 이용한 그림 완성"
+        team: "서호준준"
+        image: "assets/images/sections/projects/2022/cnc.jpg"
         tags: ["2022"]
         duration: "2022년 3월 ~ 2022년 12월"
 ############################################################################################
