@@ -115,6 +115,7 @@ projects:
       - title: "계단 극복 핸드 카트"
         description: "계단 극복이 가능한 핸드 카트 설계."
         team: "김규목(총 7명)"
+        image: "assets/images/sections/projects/2023/cart.jpg"
         tags: ["2023"]
         duration: "2023년 3월 ~ 2023년 12월"
         links:
