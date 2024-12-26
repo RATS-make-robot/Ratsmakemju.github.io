@@ -181,7 +181,7 @@ projects:
         team: "탁지훈, 신희성"
         image: "assets/images/sections/projects/2022/watch.jpg"
         tags: ["2022"]
-        duration: "2022년 6월 ~ 2022년 12월"
+        duration: "2022년 9월 ~ 2022년 12월"
 
       - title: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
         description: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
@@ -226,7 +226,7 @@ projects:
         team: "안재원(총 3명)"
         image: "assets/images/sections/projects/2022/balancing.jpg"
         tags: ["2022"]
-        duration: "2022년 6월 ~ 2022년 12월"
+        duration: "2022년 9월 ~ 2022년 12월"
 
       - title: "그림 그리는 CNC"
         description: "G-CODE를 이용한 그림 완성"
