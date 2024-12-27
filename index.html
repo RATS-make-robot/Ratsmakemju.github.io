@@ -69,6 +69,13 @@
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
         </script>
     </div>
+    
+    <script>
+        // Wait for the animation to finish, then show the content
+        setTimeout(() => {
+            document.querySelector('.content').classList.add('show');
+        }, 2000); // 3s fadeOut starts after 1.5s slideIn
+    </script>
 
     <div class="content" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
@@ -243,12 +250,6 @@
 
     <!--<script src="assets/js/about-animation.js"></script> -->
     <!-- Include the script -->
-    <script>
-        // Wait for the animation to finish, then show the content
-        setTimeout(() => {
-            document.querySelector('.content').classList.add('show');
-        }, 2000); // 3s fadeOut starts after 1.5s slideIn
-    </script>
     <!-- Include the JS-YAML library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <!-- Include loading script -->
