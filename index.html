@@ -78,13 +78,7 @@
                 <h4><i>Since 1993</i></h4>
             </div>
             <!-- About content will be dynamically included -->
-    <script>
-        // Wait for the animation to finish, then show the content
-        setTimeout(() => {
-            document.querySelector('.content').classList.add('show');
-        }, 2500); // 3s fadeOut starts after 1.5s slideIn
-    </script>
-            
+
             <script>
                 fetch('about.html')
                     .then(res => res.text())
@@ -247,6 +241,12 @@
     <script src="assets/js/load_experiences.js"></script>
     <script src="assets/js/load_projects.js"></script>
     <script src="assets/js/load_seminars.js"></script>
+    <script>
+        // Wait for the animation to finish, then show the content
+        setTimeout(() => {
+            document.querySelector('.content').classList.add('show');
+        }, 2500); // 3s fadeOut starts after 1.5s slideIn
+    </script>
     <!--<script src="assets/js/filter_projects.js"></script>-->
 </body>
 
