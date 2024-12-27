@@ -19,43 +19,10 @@
 
 <!-- CSS -->
 <style>
-    .filter-buttons {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .filter-btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .filter-btn.active {
-        background-color: #0056b3;
-    }
-
-    .filter-btn:hover {
-        background-color: #0056b3;
-    }
 
     .project-container {
         flex-direction: column;
         /* 연도별로 세로 배치 */
-        overflow-y: hidden;
-        /* 세로 스크롤 비활성화 */
-        overflow-x: auto;
-        /* 가로 스크롤 활성화 */
-        overflow-x: auto;
-        /* 가로 스크롤 활성화 */
-        scrollbar-width: thin;
-        /* 간소화된 스크롤바 */
-        -ms-overflow-style: none;
-        /* IE에서 스크롤 숨김 */
     }
 
     .project-scroll-container {
@@ -73,6 +40,16 @@
         padding: 10px;
 
 
+        overflow-y: hidden;
+        /* 세로 스크롤 비활성화 */
+        overflow-x: auto;
+        /* 가로 스크롤 활성화 */
+        overflow-x: auto;
+        /* 가로 스크롤 활성화 */
+        scrollbar-width: thin;
+        /* 간소화된 스크롤바 */
+        -ms-overflow-style: none;
+        /* IE에서 스크롤 숨김 */
         /*animation: scroll-loop 20s linear infinite;*/
     }
 
@@ -82,7 +59,6 @@
     }
 
     .project-card {
-
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -100,7 +76,7 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .project-container::-webkit-scrollbar {
+    .project-group::-webkit-scrollbar {
         height: 6px;
         /* 스크롤바 높이 */
         background: #f1f1f1;
@@ -108,14 +84,14 @@
         /*display: none;  크롬, 사파리 스크롤 숨김 */
     }
 
-    .project-container::-webkit-scrollbar-thumb {
+    .project-group::-webkit-scrollbar-thumb {
         background: #888;
         /* 스크롤바 색상 */
         border-radius: 4px;
         /* 둥근 모서리 */
     }
 
-    .project-container::-webkit-scrollbar-thumb:hover {
+    .project-group::-webkit-scrollbar-thumb:hover {
         background: #555;
         /* 스크롤바 호버 색상 */
     }
@@ -212,6 +188,29 @@
         100% {
             transform: translateX(-50%);
         }
+    }
+    .filter-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .filter-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .filter-btn.active {
+        background-color: #0056b3;
+    }
+
+    .filter-btn:hover {
+        background-color: #0056b3;
     }
 </style>
 
