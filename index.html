@@ -54,32 +54,32 @@
     </div>-->
     <!-- Include header -->
     <div class="site-header" id="header">
+        <div class="content" align="center">
+            <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
+            <h4><i>Since 1993</i></h4>
+        </div>
         <!-- Header content will be dynamically included 
         <img src="assets/images/site/logo.png" alt="RATS Logo">-->
         <script>
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
         </script>
     </div>
-
-
-    <!-- Include navigation -->
-    <div id="navigation">
-        <div class="content" align="center">
-            <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
-            <h4><i>Since 1993</i></h4>
-        </div>
-        <!-- Navigation content will be dynamically included -->
-        <script>
-            fetch('nav.html').then(res => res.text()).then(data => document.getElementById('navigation').innerHTML = data);
-        </script>
-    </div>
-
     <script>
         // Wait for the animation to finish, then show the content
         setTimeout(() => {
             document.querySelector('.content').classList.add('show');
         }, 2500); // 3s fadeOut starts after 1.5s slideIn
     </script>
+
+
+    <!-- Include navigation -->
+    <div id="navigation">
+        <!-- Navigation content will be dynamically included -->
+        <script>
+            fetch('nav.html').then(res => res.text()).then(data => document.getElementById('navigation').innerHTML = data);
+        </script>
+    </div>
+
     <main>
         <!-- Include about -->
         <div id="about">
