@@ -1,10 +1,9 @@
 <!-- 코딩 애니메이션 화면 -->
-<section>
-    <div class="content" class="about-rats" align="center">
+<section id="about" class="content">
+    <div id="about-rats" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
-        <h4><i>Since 1993</i></h4>
+        <p><i>Since 1993</i></p>
     </div>
-
     <div id="coding-animation">
         <div class="code-container">
             <pre id="code-display"><span class="cursor"></span></pre>
@@ -15,7 +14,7 @@
 
 <!-- CSS -->
 <style>
-    .about-rats {
+    #about {
         word-break: keep-all;
         /* 한글 단어 끊어짐 방지 */
         white-space: normal;
@@ -36,7 +35,9 @@
             opacity: 1;
         }
     }
-
+    #about{
+        background-color: #f4f4f4;
+    }
 
 
     #coding-animation {
