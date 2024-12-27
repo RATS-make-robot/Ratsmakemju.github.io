@@ -46,15 +46,21 @@
     .project-container {
         flex-direction: column;
         /* 연도별로 세로 배치 */
+        overflow-y: hidden;
+        /* 세로 스크롤 비활성화 */
+        overflow-x: auto;
+        /* 가로 스크롤 활성화 */
+        overflow-x: auto;
+        /* 가로 스크롤 활성화 */
+        scrollbar-width: thin;
+        /* 간소화된 스크롤바 */
+        -ms-overflow-style: none;
+        /* IE에서 스크롤 숨김 */
     }
 
     .project-scroll-container {
         display: flex;
         gap: 20px;
-        overflow-y: hidden;
-        /* 세로 스크롤 비활성화 */
-        overflow-x: auto;
-        /* 가로 스크롤 활성화 */
         padding: 10px;
     }
 
@@ -76,12 +82,6 @@
     }
 
     .project-card {
-        overflow-x: auto;
-        /* 가로 스크롤 활성화 */
-        scrollbar-width: thin;
-        /* 간소화된 스크롤바 */
-        -ms-overflow-style: none;
-        /* IE에서 스크롤 숨김 */
 
         background: #fff;
         border-radius: 8px;
@@ -100,7 +100,7 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .project-card::-webkit-scrollbar {
+    .project-container::-webkit-scrollbar {
         height: 6px;
         /* 스크롤바 높이 */
         background: #f1f1f1;
@@ -108,14 +108,14 @@
         /*display: none;  크롬, 사파리 스크롤 숨김 */
     }
 
-    .project-card::-webkit-scrollbar-thumb {
+    .project-container::-webkit-scrollbar-thumb {
         background: #888;
         /* 스크롤바 색상 */
         border-radius: 4px;
         /* 둥근 모서리 */
     }
 
-    .project-card::-webkit-scrollbar-thumb:hover {
+    .project-container::-webkit-scrollbar-thumb:hover {
         background: #555;
         /* 스크롤바 호버 색상 */
     }
