@@ -14,72 +14,112 @@
     <title>RATS Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
-        .box {
-            margin: 0 auto;
+        .start {
             width: 10px;
-            transform: translateY(50px) skew(0deg);
+            transform: translateY(50px) skew(0deg) scale(1);
             opacity: 0;
-            animation: slideIn 0.8s ease forwards, fadeOut 0.5s ease-out 2s forwards;
-          }
-        
-          @keyframes slideIn {
-            0% {
-              transform: translateY(50px) skew(0deg);
-              opacity: 0;
-            }
-            100% {
-              transform: translateY(0) skew(-5deg);
-              opacity: 1;
-            }
-          }
-        
-          @keyframes fadeOut {
-            0% {
-              opacity: 1;
-            }
-            100% {
-              opacity: 0;
-            }
-          }
-        
-          .content {
-            display: none;
-            text-align: center;
-          }
-        
-          .content.show {
-            display: block;
-          }
+            animation: startIn 0.8s ease forwards, setIn 0.5s ease-out 2s forwards;
+        }
 
+        @keyframes startIn {
+            0% {
+                transform: translateY(50px) skew(0deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0) skew(-5deg) scale(2);
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes setIn {
+            0% {
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.show {
+            display: block;
+            animation: slideIn 0.8s ease forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px) skew(0deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0) skew(-5deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.show {
+            display: block;
+            animation: slideIn 0.8s ease forwards;
+        }
     </style>
 </head>
 
 <body>
+    <!--
     <div class="box">
         <img src="assets/images/site/logo.png" alt="RATS Logo">
-    </div>
+    </div>-->
     <!-- Include header -->
-    <div id="box">
-        <!-- Header content will be dynamically included -->
+    <div class="start" id="header">
+        <!-- Header content will be dynamically included 
+        <img src="assets/images/site/logo.png" alt="RATS Logo">-->
         <script>
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
         </script>
     </div>
 
-    <div align="center">
+    <div class="content" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
         <h4><i>Since 1993</i></h4>
+        <script>
+            // Wait for the animation to finish, then show the content
+            setTimeout(() => {
+                document.querySelector('.content').classList.add('show');
+            }, 2000); // 3s fadeOut starts after 1.5s slideIn
+        </script>
     </div>
 
     <!-- Include navigation -->
-    <div id="navigation">
+    <div class="content" id="navigation">
         <!-- Navigation content will be dynamically included -->
         <script>
             fetch('nav.html').then(res => res.text()).then(data => document.getElementById('navigation').innerHTML = data);
         </script>
     </div>
 
-    <main>
+    <main class="content">
         <!-- Include about -->
         <div id="about">
             <!-- About content will be dynamically included -->
@@ -230,7 +270,7 @@
         </div>
     </main>
     <!-- Include footer -->
-    <div id="footer">
+    <div class="content" id="footer">
         <!-- Footer content will be dynamically included -->
         <script>
             fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
@@ -240,12 +280,6 @@
     <!--<script src="assets/js/about-animation.js"></script> -->
     <!-- Include the script -->
     <!-- Include the JS-YAML library -->
-    <script>
-        // Wait for the animation to finish, then show the content
-        setTimeout(() => {
-          document.querySelector('.content').classList.add('show');
-        }, 4000); // 3s fadeOut starts after 1.5s slideIn
-      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <!-- Include loading script -->
     <script src="assets/js/load_experiences.js"></script>
