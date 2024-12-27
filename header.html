@@ -14,21 +14,20 @@
         justify-content: center;
         /* 가로로 가운데 정렬 */
         align-items: center;
-        background-color: #ffffff;
         /* 세로로 가운데 정렬 */
-        transform: translateY(50%) skew(0deg) scale(1);
+        background-color: #ffffff;
+        transform: translateY(1em) skew(0deg) scale(1);
         opacity: 0;
         animation: startIn 0.8s ease forwards, setIn 0.5s ease-out 3s forwards, setColor 3.0s ease-out 2.5s forwards;
     }
 
     .logo-container {
-        height: 100%;
+         height: 100%;
         /* 헤더 높이의 80%로 로고 크기 조정 */
     }
 
     .logo-container img {
         height: 100%;
-        max-width: 50px;
         /* 컨테이너 높이에 맞춤 */
         object-fit: contain;
         /* 비율 유지 */
@@ -40,7 +39,7 @@
         100% {
             transform: translateY(0) scale(3);
             opacity: 1;
-            height: 30%;
+            height: 3em;
             padding-top: 5em;
         }
     }
