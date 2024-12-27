@@ -1,5 +1,9 @@
 <!-- 코딩 애니메이션 화면 -->
 <section id="coding-animation">
+    <div class="about-rats" align="center">
+        <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
+        <h4><i>Since 1993</i></h4>
+    </div>
     <div class="code-container">
         <pre id="code-display"><span class="cursor"></span></pre>
     </div>
@@ -8,6 +12,24 @@
 
 <!-- CSS -->
 <style>
+    .about-rats {
+        animation: slideIn 0.8s ease forwards;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateY(50px) skew(0deg);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0) skew(-5deg);
+            opacity: 1;
+        }
+    }
+
+
+
     #coding-animation {
         background-color: #1e1e1e; /* 검정 배경 */
         color: #dcdcdc; /* 기본 텍스트 색상 */
