@@ -10,13 +10,14 @@
 <style>
     .site-header {
         display: flex;
+        padding: 2px;
         justify-content: center;
         /* 가로로 가운데 정렬 */
         align-items: center;
         /* 세로로 가운데 정렬 */
         transform: translateY(50%) skew(0deg) scale(1);
         opacity: 0;
-        animation: startIn 0.8s ease forwards, setIn 0.5s ease-out 2s forwards;
+        animation: startIn 0.8s ease forwards, setIn 0.5s ease-out 3s forwards, setColor 1s ease-out 4s forwards;
     }
 
     .logo-container {
@@ -26,7 +27,7 @@
 
     .logo-container img {
         height: 100%;
-        max-width: 100px;
+        max-width: 50px;
         /* 컨테이너 높이에 맞춤 */
         object-fit: contain;
         /* 비율 유지 */
@@ -39,21 +40,26 @@
             transform: translateY(0) scale(3);
             opacity: 1;
             height: 30%;
-            padding: 10%;
+            padding-top: 5em;
         }
     }
 
     @keyframes setIn {
-        0% {
-        }
+        0% {}
 
         100% {
+            height: 2em;
+            padding-top: 0;
             transform: translateY(0) scale(1);
-            padding: 2px;
+        }
+    }
+
+    @keyframes setColor {
+        0% {}
+
+        100% {
             background-color: #f8f9fa;
             border-bottom: 1px solid #ddd;
-            height: 2em;
-            /* 헤더 높이 설정 */
         }
     }
 </style>
