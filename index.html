@@ -5,19 +5,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="명지대학교 중앙동아리 RATS">
+    <meta name="description" content="명지대학교 로봇, 임베디드 중앙동아리 RATS">
     <meta property="og:title" content="RATS website">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="명지대학교 중앙동아리 RATS">
+    <meta property="og:description" content="명지대학교 로봇, 임베디드 중앙동아리 RATS">
     <meta property="og:image" content="assets/images/site/logo.png">
     <meta property="og:url" content="https://join.mju-rats.com/">
     <title>RATS Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .box {
+            margin: 0 auto;
+            width: 10px;
+            transform: translateY(50px) skew(0deg);
+            opacity: 0;
+            animation: slideIn 0.8s ease forwards, fadeOut 0.5s ease-out 2s forwards;
+          }
+        
+          @keyframes slideIn {
+            0% {
+              transform: translateY(50px) skew(0deg);
+              opacity: 0;
+            }
+            100% {
+              transform: translateY(0) skew(-5deg);
+              opacity: 1;
+            }
+          }
+        
+          @keyframes fadeOut {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        
+          .content {
+            display: none;
+            text-align: center;
+          }
+        
+          .content.show {
+            display: block;
+          }
+
+    </style>
 </head>
 
 <body>
+    <div class="box">
+        <img src="assets/images/site/logo.png" alt="RATS Logo">
+    </div>
     <!-- Include header -->
-    <div id="header">
+    <div id="box">
         <!-- Header content will be dynamically included -->
         <script>
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
@@ -198,12 +240,17 @@
     <!--<script src="assets/js/about-animation.js"></script> -->
     <!-- Include the script -->
     <!-- Include the JS-YAML library -->
+    <script>
+        // Wait for the animation to finish, then show the content
+        setTimeout(() => {
+          document.querySelector('.content').classList.add('show');
+        }, 4000); // 3s fadeOut starts after 1.5s slideIn
+      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <!-- Include loading script -->
     <script src="assets/js/load_experiences.js"></script>
     <script src="assets/js/load_projects.js"></script>
     <script src="assets/js/load_seminars.js"></script>
-
     <!--<script src="assets/js/filter_projects.js"></script>-->
 </body>
 
