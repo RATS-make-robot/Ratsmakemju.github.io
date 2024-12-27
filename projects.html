@@ -15,6 +15,12 @@
     <div class="project-scroll-container">
         <!-- Projects will be dynamically added here -->
     </div>
+    <script>
+        // Wait for the animation to finish, then show the content
+        setTimeout(() => {
+            document.querySelector('.content').classList.add('show');
+        }, 2500); // 3s fadeOut starts after 1.5s slideIn
+    </script>
 </section>
 
 <!-- CSS -->

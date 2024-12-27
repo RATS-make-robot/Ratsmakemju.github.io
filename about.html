@@ -9,6 +9,12 @@
             <pre id="code-display"><span class="cursor"></span></pre>
         </div>
     </div>
+    <script>
+        // Wait for the animation to finish, then show the content
+        setTimeout(() => {
+            document.querySelector('.content').classList.add('show');
+        }, 2500); // 3s fadeOut starts after 1.5s slideIn
+    </script>
 </section>
 <!--<script src="assets/js/about-animation.js"></script> -->
 
