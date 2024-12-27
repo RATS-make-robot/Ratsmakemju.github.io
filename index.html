@@ -44,15 +44,6 @@
                 opacity: 0;
             }
         }
-
-        .content {
-            display: none;
-        }
-
-        .content.show {
-            display: block;
-            animation: slideIn 0.8s ease forwards;
-        }
     </style>
 </head>
 
@@ -69,7 +60,7 @@
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
         </script>
     </div>
-    
+
     <script>
         // Wait for the animation to finish, then show the content
         setTimeout(() => {
@@ -90,7 +81,7 @@
         </script>
     </div>
 
-    <main class="content">
+    <main>
         <!-- Include about -->
         <div id="about">
             <!-- About content will be dynamically included -->
