@@ -19,16 +19,15 @@
 
 <!-- CSS -->
 <style>
-
-    .project-container {
-        flex-direction: column;
-        /* 연도별로 세로 배치 */
-    }
-
     .project-scroll-container {
         display: flex;
         gap: 20px;
         padding: 10px;
+    }
+    .project-container {
+        flex-direction: column;
+        /* 연도별로 세로 배치 */
+        overflow-x: auto !important
     }
 
     .project-group {
@@ -38,7 +37,6 @@
 
         gap: 20px;
         padding: 10px;
-
 
         overflow-y: hidden;
         /* 세로 스크롤 비활성화 */
@@ -51,6 +49,9 @@
         -ms-overflow-style: none;
         /* IE에서 스크롤 숨김 */
         /*animation: scroll-loop 20s linear infinite;*/
+
+        width: max-content;
+        width: auto !important;
     }
 
     .project-group:hover {
