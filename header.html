@@ -16,6 +16,9 @@
         background-color: #f8f9fa;
         border-bottom: 1px solid #ddd;
         height: 2em; /* 헤더 높이 설정 */
+        transform: translateY(50px) skew(0deg) scale(1);
+        opacity: 0;
+        animation: startIn 0.8s ease forwards, setIn 0.5s ease-out 2s forwards;
     }
 
     .logo-container {
@@ -26,4 +29,28 @@
         height: 100%; /* 컨테이너 높이에 맞춤 */
         object-fit: contain; /* 비율 유지 */
     }
+
+    @keyframes startIn {
+            0% {
+                transform: translateY(50px) skew(0deg);
+                opacity: 0;
+                padding: 50px;
+            }
+
+            100% {
+                transform: translateY(0) skew(-5deg) scale(5);
+                opacity: 1;
+                padding: 2px;
+            }
+        }
+
+@keyframes setIn {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 </style>

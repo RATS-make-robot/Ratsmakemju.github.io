@@ -14,36 +14,6 @@
     <title>RATS Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
-        .start {
-            width: 10px;
-            transform: translateY(50px) skew(0deg) scale(1);
-            opacity: 0;
-            animation: startIn 0.8s ease forwards, setIn 0.5s ease-out 2s forwards;
-        }
-
-        @keyframes startIn {
-            0% {
-                transform: translateY(50px) skew(0deg);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0) skew(-5deg) scale(2);
-                opacity: 1;
-            }
-        }
-
-
-        @keyframes setIn {
-            0% {
-                transform: scale(2);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
         .content {
             display: none;
         }
@@ -92,7 +62,7 @@
         <img src="assets/images/site/logo.png" alt="RATS Logo">
     </div>-->
     <!-- Include header -->
-    <div class="start" id="header">
+    <div class="site-header" id="header">
         <!-- Header content will be dynamically included 
         <img src="assets/images/site/logo.png" alt="RATS Logo">-->
         <script>
@@ -103,12 +73,6 @@
     <div class="content" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
         <h4><i>Since 1993</i></h4>
-        <script>
-            // Wait for the animation to finish, then show the content
-            setTimeout(() => {
-                document.querySelector('.content').classList.add('show');
-            }, 2000); // 3s fadeOut starts after 1.5s slideIn
-        </script>
     </div>
 
     <!-- Include navigation -->
@@ -279,6 +243,12 @@
 
     <!--<script src="assets/js/about-animation.js"></script> -->
     <!-- Include the script -->
+    <script>
+        // Wait for the animation to finish, then show the content
+        setTimeout(() => {
+            document.querySelector('.content').classList.add('show');
+        }, 2000); // 3s fadeOut starts after 1.5s slideIn
+    </script>
     <!-- Include the JS-YAML library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <!-- Include loading script -->
