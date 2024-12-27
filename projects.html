@@ -61,18 +61,23 @@
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 10px;
+       /* padding: 10px;*/
         flex: 0 0 auto;
         /* 카드 크기 고정 */
-        width: 300px;
+        /* width: 300px;*/
+        width: 40%;
         min-height: 250px;
         /* 최소 높이 */
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        animation: scroll-loop 20s linear infinite;
     }
 
     .project-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        
+        animation-play-state: paused;
     }
 
     .project-group::-webkit-scrollbar {
@@ -184,8 +189,12 @@
             transform: translateX(0);
         }
 
-        100% {
+        50% {
             transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0);
         }
     }
     .filter-buttons {
