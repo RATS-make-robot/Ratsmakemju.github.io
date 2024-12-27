@@ -1,11 +1,14 @@
 <!-- 코딩 애니메이션 화면 -->
-<section id="coding-animation">
+<section class="content">
     <div class="about-rats" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
         <h4><i>Since 1993</i></h4>
     </div>
-    <div class="code-container">
-        <pre id="code-display"><span class="cursor"></span></pre>
+
+    <div id="coding-animation">
+        <div class="code-container">
+            <pre id="code-display"><span class="cursor"></span></pre>
+        </div>
     </div>
 </section>
 <!--<script src="assets/js/about-animation.js"></script> -->
@@ -13,6 +16,12 @@
 <!-- CSS -->
 <style>
     .about-rats {
+        word-break: keep-all;
+        /* 한글 단어 끊어짐 방지 */
+        white-space: normal;
+        /* 기본 줄바꿈 */
+        overflow-wrap: break-word;
+        /* 긴 단어 줄바꿈 */
         animation: slideIn 0.8s ease forwards;
     }
 
@@ -31,22 +40,29 @@
 
 
     #coding-animation {
-        background-color: #1e1e1e; /* 검정 배경 */
-        color: #dcdcdc; /* 기본 텍스트 색상 */
-        font-family: 'Courier New', Courier, monospace; /* 코딩 폰트 */
+        background-color: #1e1e1e;
+        /* 검정 배경 */
+        color: #dcdcdc;
+        /* 기본 텍스트 색상 */
+        font-family: 'Courier New', Courier, monospace;
+        /* 코딩 폰트 */
         padding: 20px;
         border-radius: 10px;
         max-width: 800px;
-        margin: 50px auto; /* 가운데 정렬 */
+        margin: 50px auto;
+        /* 가운데 정렬 */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .code-container {
-        height: 50px; /* 고정 높이 설정 */
+        height: 50px;
+        /* 고정 높이 설정 */
         padding: 20px;
-        background-color: #252526; /* 다크 그레이 배경 */
+        background-color: #252526;
+        /* 다크 그레이 배경 */
         border-radius: 8px;
-        overflow: hidden; /* 넘치는 텍스트 숨기기 */
+        overflow: hidden;
+        /* 넘치는 텍스트 숨기기 */
     }
 
     pre {
@@ -60,8 +76,10 @@
         display: inline-block;
         width: 10px;
         height: 18px;
-        background-color: #dcdcdc; /* 커서 색상 */
-        animation: blink 0.5s step-end infinite; /* 커서 깜박임 */
+        background-color: #dcdcdc;
+        /* 커서 색상 */
+        animation: blink 0.5s step-end infinite;
+        /* 커서 깜박임 */
     }
 
     @keyframes blink {
