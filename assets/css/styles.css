@@ -7,7 +7,7 @@ body {
     /* line-height: 1.6;*/
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 50px; /* 네비게이션 바 높이만큼 여백 */
+    padding-top: 40px; /* 네비게이션 바 높이만큼 여백 */
 }
 
 /* Navigation styles */
@@ -75,6 +75,6 @@ footer p {
         max-width: 100%;
     }
     body {
-        padding-top: 40px; /* 네비게이션 바 높이만큼 여백 */
+        padding-top: 30px; /* 네비게이션 바 높이만큼 여백 */
     }
 }
