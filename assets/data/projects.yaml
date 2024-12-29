@@ -140,7 +140,7 @@ projects:
         links:
           youtube: "https://youtu.be/tqQg0wU-9ns?si=lssECIQScBdo7ebp"
 
-      - title: "반도체 공정장비용 Remote Plasma Source를 위한 RF 전원회로 설계"
+      - title: "RF 전원회로 설계"
         description: "반도체 공정장비용 Remote Plasma Source를 위한 RF 전원회로 설계"
         team: "신희성(총 4명)"
         image: "assets/images/sections/projects/2023/rf.jpg"
