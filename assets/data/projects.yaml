@@ -164,7 +164,7 @@ projects:
       - title: "드론을 이용한 잔불진화 시스템"
         description: "화재지시기를 통한 잔불 식별 및 자율 진화."
         team: "유종상, 유성환, 김지호, 이한얼, 김예지"
-        image: ""
+        image: "assets/images/sections/projects/2022/drone.png"
         tags: ["2022"]
         duration: "2022년 3월 ~ 2022년 12월"
         links:
@@ -274,7 +274,7 @@ projects:
       - title: "2자유도 공 균형 제어 시스템"
         description: "터치스크린 센서를 이용한 PID 균형 제어 로봇."
         team: "김성현"
-        image: "https://user-images.githubusercontent.com/24962064/123507466-8b996a80-d6a4-11eb-8924-91e980d115ab.jpg"
+        image: "assets/images/sections/projects/2019/ball.jpg"
         tags: ["2019"]
         duration: "2019년 3월 ~ 2019년 7월"
         links:
@@ -283,6 +283,7 @@ projects:
       - title: "6족 보행 로봇"
         description: "6족 보행 로봇"
         team: "김태수, 이인영, 유성환, 유종상"
+        image: "assets/images/sections/projects/2018/6leg.jpg"
         tags: ["2018", "2019", "2020", "2021"]
         duration: "2018년 1월 ~ 2021년 11월"
         links:
