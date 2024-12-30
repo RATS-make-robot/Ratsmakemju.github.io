@@ -47,13 +47,13 @@
 experiences:
   - year: "2024년도"
     competitions:
-      - name: "2024 한이음 ICT멘토링 공모전"
+      - name: "제 3회 명지대학교 창의적SW프로그램 경진대회"
         awards:
-          - type: "입선"
-            count: 2
-      - name: "제22회 임베디드 SW 경진대회"
+          - type: "대상"
+            count: 1
+      - name: "KCSDT 2024 GUMI 학술대회 포스터상"
         awards:
-          - type: "입선"
+          - type: "우수상"
             count: 1
       - name: "2024 명지대학교 전자공학과 캡스톤디자인 작품발표회"
         awards:
@@ -63,22 +63,22 @@ experiences:
         awards:
           - type: "동상"
             count: 1
-      - name: "KCSDT 2024 GUMI 학술대회 포스터상"
-        awards:
-          - type: "우수상"
-            count: 1
       - name: "2024 명지대학교 컴퓨터공학과 캡스톤디자인 경진대회"
         awards:
           - type: "장려상"
-            count: 1
-      - name: "제 3회 명지대학교 창의적SW프로그램 경진대회"
-        awards:
-          - type: "대상"
             count: 1
       - name: "2024학년도 ChatGPT 기반 AI 실전 활용 경진대회"
         awards:
           - type: "장려상"
             count: 1
+      - name: "제22회 임베디드 SW 경진대회"
+        awards:
+          - type: "입선"
+            count: 1
+      - name: "2024 한이음 ICT멘토링 공모전"
+        awards:
+          - type: "입선"
+            count: 2
       - name: "제 11회 전국ICT융합공모전"
         awards:
           - type: "특별상"
@@ -148,9 +148,9 @@ experiences:
             count: 1
       - name: "Campus Convergence 공모전"
         awards:
-          - type: "최우수"
+          - type: "최우수상"
             count: 1
-          - type: "우수"
+          - type: "우수상"
             count: 1
       - name: "SEP 융합 Festival"
         awards:
@@ -168,7 +168,7 @@ experiences:
             count: 2
       - name: "창의융합대회"
         awards:
-          - type: "최우수"
+          - type: "최우수상"
             count: 1
       - name: "한이음 ICT멘토링 공모전"
         awards:
@@ -178,11 +178,11 @@ experiences:
             count: 1
       - name: "창의적 종합설계 경진대회"
         awards:
-          - type: "우수"
+          - type: "우수상"
             count: 1
       - name: "창의 융합캠프"
         awards:
-          - type: "우수"
+          - type: "우수상"
             count: 1
 
   - year: "2019-2020년도"
