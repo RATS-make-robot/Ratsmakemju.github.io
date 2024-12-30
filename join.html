@@ -1,0 +1,156 @@
+<section id="join">
+    <div class="join-div">
+        <h1>Join Our Club!</h1>
+        <button class="recruit-button" onclick="/*goToGoogleForm()*/">
+            Coming Soon...
+        </button>
+        <br>
+        <br>
+        <div class="appeal" align="center">
+            <h2 class="appeal-title">Why Join RATS?</h2>
+            <ul class="appeal-list">
+                <li>🏆 Award-winning clup with proven success in robotics/embedded competitions.</li>
+                <li>🤖 Hands-on experience in building and programming robots.</li>
+                <li>📚 Learn advanced technologies like AI, machine learning, and automation.</li>
+                <li>🌐 Collaborate with passionate members on exciting projects.</li>
+                <li>🎯 Develop problem-solving and teamwork skills in a fun environment.</li>
+                <li>🔗 Access to mentorship and networking opportunities with industry experts.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<script>
+</script>
+
+<style>
+    #join{
+        animation: fadeIn 1.5s ease-in-out;
+        margin: 0 auto;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        color: white;
+        text-align: center;
+
+    }
+    .join-div {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        padding: 0;
+        padding: 20px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .recruit-button {
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(90deg, #ff7eb3, #ff758c);
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        outline: none;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .recruit-button::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 300%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: skewX(-45deg);
+        transition: left 0.5s ease;
+    }
+
+    .recruit-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .recruit-button:hover::after {
+        left: 100%;
+    }
+
+    .recruit-button:active {
+        transform: scale(1);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .appeal-list {
+        margin: 20px 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: left;
+        width: 90%;
+        max-width: 768px;
+        align: center
+    }
+
+    .appeal-list li {
+        margin: 10px 0;
+    }
+
+    .appeal-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+/*
+    @media (max-width: 768px) {
+
+        .appeal-title {
+            font-size: 1.5rem;
+        }
+
+        .appeal-list {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .recruit-button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .recruit-button {
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+
+        .appeal-title {
+            font-size: 1.2rem;
+        }
+
+        .appeal-list {
+            font-size: 0.9rem;
+        }
+    }
+        */
+</style>

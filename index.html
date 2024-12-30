@@ -13,38 +13,6 @@
     <meta property="og:url" content="https://join.mju-rats.com/">
     <title>RATS Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <style>
-        .content {
-            display: none;
-        }
-
-        .content.show {
-            display: block;
-            animation: slideIn 0.8s ease forwards;
-        }
-
-        @keyframes slideIn {
-            0% {
-                transform: translateY(50px) skew(0deg);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0) skew(-5deg);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -60,7 +28,6 @@
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
         </script>
     </div>
-
 
     <!-- Include navigation -->
     <div id="navigation">
@@ -212,6 +179,14 @@
             </script>
         </div>
 
+        <!-- Include join -->
+        <div id="join">
+            <!-- join content will be dynamically included -->
+            <script>
+                fetch('join.html').then(res => res.text()).then(data => document.getElementById('join').innerHTML = data);
+            </script>
+        </div>
+
         <!-- Include contact -->
         <div id="contact">
             <!-- Contact content will be dynamically included -->
@@ -241,6 +216,11 @@
         setTimeout(() => {
             document.querySelector('.content').classList.add('show');
         }, 1000); // 3s fadeOut starts after 1.5s slideIn
+        
+    function goToGoogleForm() {
+        const googleFormLink = "https://forms.gle/your-google-form-link"; // Replace with your Google Form link
+        window.open(googleFormLink, "_blank");
+    }
     </script>
     <!--<script src="assets/js/filter_projects.js"></script>-->
 </body>

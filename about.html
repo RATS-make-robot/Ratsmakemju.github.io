@@ -3,6 +3,13 @@
     <div id="about-rats" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
         <p><i>Since 1993</i></p>
+        <ul id="why-join">
+            <li>🤖 <b>개발의 즐거움</b>: 하드웨어와 소프트웨어를 직접 설계하고 제작합니다.</li>
+            <li>🛠️ <b>실질적인 임베디드 경험</b>: 마이크로컨트롤러와 임베디드 시스템 설계 능력을 배양합니다.</li>
+            <li>🌟 <b>다양한 수상 경력</b>: 교내외 로봇/임베디드 대회에서 다수의 상을 수상하며 동아리의 실력을 증명해왔습니다.</li>
+            <li>🎯 <b>미래를 위한 준비</b>: 실제 산업에서 요구하는 프로젝트/대회 경험을 쌓을 수 있습니다.</li>
+            <li>🌐 <b>협업과 네트워킹</b>: 다양한 전공과 학년이 함께 프로젝트를 진행하며, 졸업생을 포함하여 탄탄한 네트워크를 형성하고 있습니다.</li>
+        </ul>
     </div>
     <div id="coding-animation">
         <div class="code-container">
@@ -16,11 +23,13 @@
 <style>
     #about {
         word-break: keep-all;
-        /* 한글 단어 끊어짐 방지 */
         white-space: normal;
-        /* 기본 줄바꿈 */
         overflow-wrap: break-word;
-        /* 긴 단어 줄바꿈 */
+
+        background-color: #e3f2fd;
+        box-shadow: 0 0 10px #f4f4f4;
+        border: 0px solid #90caf9;
+        /*padding: 20px 40px;*/
         animation: slideIn 0.8s ease forwards;
     }
 
@@ -35,12 +44,45 @@
             opacity: 1;
         }
     }
-    #about{
-        background-color: #f4f4f4;
-        box-shadow: 0 0 10px #f4f4f4;
-    }
-    
 
+    #about-rats {
+        margin-bottom: 30px;
+    }
+
+    #about-rats h3 {
+        font-size: 1.8rem;
+        color: #1e88e5;
+        margin-bottom: 5px;
+    }
+
+    #about-rats p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    #why-join {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #why-join li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #why-join li b {
+        color: #1e88e5;
+        margin-left: 5px;
+    }
 
     #coding-animation {
         background-color: #1e1e1e;
