@@ -51,6 +51,10 @@ experiences:
         awards:
           - type: "대상"
             count: 1
+      - name: "2024 2,3학년을 위한 교내 캡스톤디자인 경진대회"
+        awards:
+          - type: "대상"
+            count: 1
       - name: "KCSDT 2024 GUMI 학술대회 포스터상"
         awards:
           - type: "우수상"
@@ -60,6 +64,10 @@ experiences:
           - type: "은상"
             count: 1
       - name: "2024 SEP 융합 Festival"
+        awards:
+          - type: "동상"
+            count: 1
+      - name: "2024 교내 캡스톤디자인 경진대회"
         awards:
           - type: "동상"
             count: 1
@@ -91,6 +99,14 @@ experiences:
         awards:
           - type: "최우수상"
             count: 1
+      - name: "2023 교내 캡스톤디자인 경진대회"
+        awards:
+          - type: "대상"
+            count: 1
+          - type: "동상"
+            count: 2
+          - type: "포스터상"
+            count: 1
       - name: "2023 창의적 종합 설계 경진대회"
         awards:
           - type: "금상"
@@ -103,7 +119,15 @@ experiences:
             count: 1
           - type: "동상"
             count: 1
+      - name: "2023 기계공학과 캡스톤디자인 경진대회"
+        awards:
+          - type: "금상"
+            count: 1
       - name: "2023 음성인식 어워드"
+        awards:
+          - type: "은상"
+            count: 1
+      - name: "2023 2,3학년을 위한 교내 캡스톤디자인 경진대회"
         awards:
           - type: "은상"
             count: 1
@@ -114,22 +138,6 @@ experiences:
       - name: "2023 CDE학회(대학 연구소 부문)"
         awards:
           - type: "장려상"
-            count: 1
-      - name: "2023 캡스톤디자인 경진대회(2,3학년 부문)"
-        awards:
-          - type: "은상"
-            count: 1
-      - name: "2023 캡스톤디자인 경진대회(기계공학과)"
-        awards:
-          - type: "금상"
-            count: 1
-      - name: "2023 교내 캡스톤디자인 프로젝트 경진대회"
-        awards:
-          - type: "대상"
-            count: 1
-          - type: "동상"
-            count: 2
-          - type: "포스터상"
             count: 1
 
   - year: "2022년도"
