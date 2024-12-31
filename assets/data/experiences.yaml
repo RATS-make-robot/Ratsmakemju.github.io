@@ -195,7 +195,7 @@ experiences:
 
   - year: "2019-2020년도"
     competitions:
-      - name: "2019 임베디드 소프트웨어 경진대회"
+      - name: "2019 임베디드 SW 경진대회"
         awards:
           - type: "우수상"
             count: 1
@@ -222,6 +222,10 @@ experiences:
       - name: "2019 교내 캡스톤디자인 프로젝트 경진대회(융합과제)"
         awards:
           - type: "장려상"
+            count: 1
+      - name: "2019-2 공학입문설계 경진대회"
+        awards:
+          - type: "최우수상"
             count: 1
       - name: "2020 서울과학기술대학교 공학교육 거점센터 창의적 종합설계 경진대회"
         awards:
