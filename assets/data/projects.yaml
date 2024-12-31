@@ -170,6 +170,13 @@ projects:
         links:
           github: "https://github.com/js4ngu/22_HanEum_Forest-Fire-Extinguishing-Assistance-System"
 
+      - title: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
+        description: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
+        team: "이한얼, 김규목"
+        image: "assets/images/sections/projects/2022/dart.gif"
+        tags: ["2022"]
+        duration: "2022년"
+
       - title: "난청환자를 위한 방향알림 장치"
         description: "4개의 마이크와 8개의 진동 모듈을 장착하여 8방향을 알려줌. 센서, STM32 실장 PCB 직접 제작"
         team: "김태수(총 6명)"
@@ -183,13 +190,6 @@ projects:
         image: "assets/images/sections/projects/2022/watch.jpg"
         tags: ["2022"]
         duration: "2022년 9월 ~ 2022년 12월"
-
-      - title: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
-        description: "7축 로봇 팔 제어, 시뮬레이션 및 이를 이용한 다트 던지기"
-        team: "이한얼, 김규목"
-        image: "assets/images/sections/projects/2022/dart.gif"
-        tags: ["2022"]
-        duration: "2022년"
 
       - title: "강화학습 기반 4족보행 제어"
         description: "강화학습 기반 4족보행 제어"
@@ -255,9 +255,9 @@ projects:
         links:
           other: "https://play.google.com/store/apps/details?id=com.mba.busapp"
 
-############################################################################################
-  - year: "2020년도"
-    projects:
+##############################################
+#  - year: "2020년도"
+#    projects:
       - title: "자이로스코프 드론"
         description: "자이로스코프 형태의 드론 가드 설계."
         team: "석은혜"
