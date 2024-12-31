@@ -7,6 +7,10 @@ body {
     background-color: #e3f2fd; /* 부드러운 파란색 배경 */
     color: #212121; /* 어두운 회색 텍스트 */
     padding-top: 40px; /* 네비게이션 바 높이만큼 여백 */
+    
+    word-break: keep-all; /* 한글 단어 끊어짐 방지 */
+    white-space: normal; /* 기본 줄바꿈 */
+    overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
 }
 
 @media (max-width: 768px) {
