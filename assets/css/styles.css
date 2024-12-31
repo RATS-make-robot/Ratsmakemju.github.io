@@ -21,6 +21,14 @@ body {
         padding-top: 30px; /* 네비게이션 바 높이만큼 여백 */
     }
 }
+@media (max-width: 440px) {
+    section {
+        max-width: 100%;
+    }
+    body {
+        padding-top: 45px; /* 네비게이션 바 높이만큼 여백 */
+    }
+}
 
 /* Section styles */
 section {
