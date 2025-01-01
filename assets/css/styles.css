@@ -81,19 +81,48 @@ section h2 {
     }
 }
 
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+/* Back-to-top button styles */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    animation: bounce 1.5s infinite;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+/* Hover effect */
+#back-to-top:hover {
+    transform: scale(1.1);
+    background-color: #1565c0;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Show the button when visible */
+#back-to-top.visible {
+    display: flex;
+    opacity: 1;
 }
 
 /*header*/

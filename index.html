@@ -194,6 +194,10 @@
                 fetch('contact.html').then(res => res.text()).then(data => document.getElementById('contact').innerHTML = data);
             </script>
         </div>
+
+        <button id="back-to-top" title="Go to top">⇪</button>
+
+        </div>
     </main>
     <!-- Include footer -->
     <div id="footer">
@@ -216,11 +220,33 @@
         setTimeout(() => {
             document.querySelector('.content').classList.add('show');
         }, 1000); // 3s fadeOut starts after 1.5s slideIn
-        
-    function goToGoogleForm() {
-        const googleFormLink = "https://forms.gle/your-google-form-link"; // Replace with your Google Form link
-        window.open(googleFormLink, "_blank");
-    }
+
+        function goToGoogleForm() {
+            const googleFormLink = "https://forms.gle/your-google-form-link"; // Replace with your Google Form link
+            window.open(googleFormLink, "_blank");
+        }
+
+        // Back-to-top button functionality
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopButton = document.getElementById("back-to-top");
+
+            // Show/hide button on scroll
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add("visible");
+                } else {
+                    backToTopButton.classList.remove("visible");
+                }
+            });
+
+            // Scroll to top on click
+            backToTopButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
     </script>
     <!--<script src="assets/js/filter_projects.js"></script>-->
 </body>
