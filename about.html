@@ -1,5 +1,6 @@
 <!-- 코딩 애니메이션 화면 -->
 <section id="about" class="content">
+    <!--
     <div id="about-rats" align="center">
         <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
         <p><i>Since 1993</i></p>
@@ -10,7 +11,47 @@
             <li>🎯 <b>미래를 위한 준비</b>: 실제 산업에서 요구하는 프로젝트/대회 경험을 쌓을 수 있습니다.</li>
             <li>🌐 <b>협업과 네트워킹</b>: 다양한 전공과 학년이 함께 프로젝트를 진행하며, 졸업생을 포함하여 탄탄한 네트워크를 형성하고 있습니다.</li>
         </ul>
+    </div>-->
+    <div id="about-rats" align="center">
+        <h3>명지대학교 로봇, 임베디드 중앙동아리</h3>
+        <p><i>Since 1993</i></p>
+        <table id="why-join-table" style="">
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">🤖</td>
+                    <td style=""><b>개발의 즐거움</b></td>
+                    <td style="width: 1px; ">:</td>
+                    <td style="">하드웨어와 소프트웨어를 직접 설계하고 제작합니다.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">🛠️</td>
+                    <td style=""><b>실질적인 임베디드 경험</b></td>
+                    <td style="width: 1px;">:</td>
+                    <td style="">마이크로컨트롤러와 임베디드 시스템 설계 능력을 배양합니다.</td>
+                </tr>
+                <tr>
+                    <td style=" text-align: center;">🌟</td>
+                    <td style=""><b>다양한 수상 경력</b></td>
+                    <td style="width: 1px;">:</td>
+                    <td style="">교내외 로봇/임베디드 대회에서 다수의 상을 수상하며 동아리의 실력을 증명해왔습니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td style=" text-align: center;">🎯</td>
+                    <td style=""><b>미래를 위한 준비</b></td>
+                    <td style="width: 1px;">:</td>
+                    <td style="">실제 산업에서 요구하는 프로젝트/대회 경험을 쌓을 수 있습니다.</td>
+                </tr>
+                <tr>
+                    <td style=" text-align: center;">🌐</td>
+                    <td style=""><b>협업과 네트워킹</b></td>
+                    <td style="width: 1px;">:</td>
+                    <td style="">다양한 전공과 학년이 함께 프로젝트를 진행하며, 졸업생을 포함하여 탄탄한 네트워크를
+                        형성하고 있습니다.</td>
+            </tbody>
+        </table>
     </div>
+
     <div id="coding-animation">
         <div class="code-container">
             <pre id="code-display"><span class="cursor"></span></pre>
@@ -22,6 +63,70 @@
 <!-- CSS -->
 <style>
     #about {
+        border: 0px solid #90caf9;
+        animation: slideIn 0.8s ease forwards;
+        padding: 20px;
+        background-color: #e3f2fd;
+        box-shadow: 0 4px 15px #e3f2fd;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #about-rats h3 {
+        font-size: 1.8rem;
+        color: #1e88e5;
+        margin-bottom: 5px;
+    }
+
+    #about-rats p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    #why-join-table {
+        text-align: left;
+        overflow: hidden;
+        border-collapse: collapse;
+        margin: auto;
+        border: none; /* 테이블 외곽선을 제거 */
+        padding: 1px;
+    }
+
+    #why-join-table th,
+    #why-join-table td {
+        padding: 5px;
+        border: none;
+        text-align: left;
+    }
+
+    #why-join-table th {
+        background-color: #90caf9;
+        color: #333;
+        font-size: 1rem;
+    }
+
+    #why-join-table td {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    #why-join-table td b {
+        color: #1e88e5;
+    }
+
+    /*
+    #about {
         word-break: keep-all;
         white-space: normal;
         overflow-wrap: break-word;
@@ -30,6 +135,7 @@
         box-shadow: 0 4px 15px #e3f2fd;
         border: 0px solid #90caf9;
         /*padding: 20px 40px;*/
+    /*
         animation: slideIn 0.8s ease forwards;
     }
 
@@ -84,7 +190,7 @@
         margin-left: 5px;
         margin-right: 10px;
     }
-
+*/
     #coding-animation {
         background-color: #1e1e1e;
         /* 검정 배경 */
