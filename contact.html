@@ -3,16 +3,22 @@
     <p>문의사항이 있으시면 언제든 연락 주세요!</p>
     <ul class="contact-list">
         <li>
-            <span> <a href="mailto:mjurats.official@gmail.com">
-            <img class="link-icon" src="assets/images/logos/gmail.svg" alt="Gmail" /> mjurats.official@gmail.com</a></span>
+            <a href="mailto:mjurats.official@gmail.com">
+                <img class="link-icon" src="assets/images/logos/gmail.svg" alt="Gmail" />
+                <span class="link-text">mjurats.official@gmail.com</span>
+            </a>
         </li>
         <li>
-            <span> <a href="https://github.com/RATS-make-robot" target="_blank">
-            <img class="link-icon" src="assets/images/logos/github-mark.svg" alt="GitHub" /> RATS-make-robot</a></span>
+            <a href="https://github.com/RATS-make-robot" target="_blank">
+                <img class="link-icon" src="assets/images/logos/github-mark.svg" alt="GitHub" />
+                <span class="link-text">RATS-make-robot</span>
+            </a>
         </li>
         <li>
-            <span> <a href="https://www.instagram.com/mjurats" target="_blank">
-            <img class="link-icon" src="assets/images/logos/instagram.svg" alt="Instagram" /> @mjurats</a></span>
+            <a href="https://www.instagram.com/mjurats" target="_blank">
+                <img class="link-icon" src="assets/images/logos/instagram.svg" alt="Instagram" />
+                <span class="link-text">@mjurats</span>
+            </a>
         </li>
     </ul>
 </section>
@@ -45,29 +51,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.5rem;
-}
-
-.contact-list img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
+    margin-bottom: 1rem;
 }
 
 .contact-list a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-size: 1.1rem;
-    color: #0078d7;
-    font-weight: bold;
+    color: #2C4399;
+    transition: color 0.3s ease;
 }
 
 .contact-list a:hover {
-    text-decoration: underline;
-    color: #0056a3;
+    color: #0078d7;
 }
 
-.contact-list span {
-    font-size: 1rem;
-    color: #333;
+.contact-list img.link-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
 }
+
+.contact-list img.link-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-list .link-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 </style>
