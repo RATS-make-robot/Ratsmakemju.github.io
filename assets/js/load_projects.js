@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     youtubeLink.href = project.links.youtube;
                                     youtubeLink.className = 'link-icon';
                                     youtubeLink.target = '_blank';
-                                    youtubeLink.innerHTML = `<img src="assets/images/icons/youtubelogo.svg" alt="YouTube Link" style="width: 50px; height: auto;">`;
+                                    youtubeLink.innerHTML = `<img src="assets/images/logos/youtubelogo.svg" alt="YouTube Link" style="width: 50px; height: auto;">`;
                                     linksContainer.appendChild(youtubeLink);
                                 }
 
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     githubLink.href = project.links.github;
                                     githubLink.className = 'link-icon';
                                     githubLink.target = '_blank';
-                                    githubLink.innerHTML = `<img src="assets/images/icons/githublogo.svg" alt="GitHub Link" style="width: 50px; height: auto;">`;
+                                    githubLink.innerHTML = `<img src="assets/images/logos/githublogo.svg" alt="GitHub Link" style="width: 50px; height: auto;">`;
                                     linksContainer.appendChild(githubLink);
                                 }
                             }
