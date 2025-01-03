@@ -51,12 +51,11 @@ section h2 {
 
 
 .content {
-    display: none;
+    display: block;
+    animation: slideIn 0.8s ease forwards;
 }
 
 .content.show {
-    display: block;
-    animation: slideIn 0.8s ease forwards;
 }
 
 @keyframes slideIn {
