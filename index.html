@@ -9,13 +9,19 @@
     <meta property="og:title" content="RATS 홍보페이지">
     <meta property="og:type" content="website">
     <meta property="og:description" content="명지대학교 로봇, 임베디드 중앙동아리 RATS since 1993">
-    <meta property="og:image" content="assets/images/site/logo.png">
+    <meta property="og:image" content="/assets/images/logos/RATS.svg">
     <meta property="og:url" content="https://join.mju-rats.com/">
     <title>RATS 홍보페이지 - 명지대학교 로봇, 임베디드 중앙동아리</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <script>
+        // 시스템 설정에 따라 다크모드 설정
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
     <!--
     <div class="box">
         <img src="assets/images/site/logo.png" alt="RATS Logo">
@@ -26,6 +32,11 @@
         <img src="assets/images/site/logo.png" alt="RATS Logo">-->
         <script>
             fetch('header.html').then(res => res.text()).then(data => document.getElementById('header').innerHTML = data);
+
+            // 시스템 설정에 따라 다크모드 설정
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.classList.add('dark-mode');
+            }
         </script>
     </div>
 
@@ -59,6 +70,11 @@
                         initializeTypingAnimation(typingElement);
                     })
                     .catch(error => console.error('Error loading about.html:', error));
+
+                // 시스템 설정에 따라 다크모드 설정
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.body.classList.add('dark-mode');
+                }
 
                 function initializeTypingAnimation(typingElement) {
                     const sentences = [
@@ -248,12 +264,12 @@
                     behavior: "smooth"
                 });
             });
-
-            // 시스템 설정에 따라 다크모드 설정
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.body.classList.add('dark-mode');
-            }
-
+            /*
+                        // 시스템 설정에 따라 다크모드 설정
+                        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                            document.body.classList.add('dark-mode');
+                        }
+            */
             // 다크모드 토글 버튼 기능 추가
             document.getElementById('dark-mode-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('dark-mode');
