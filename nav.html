@@ -1,5 +1,7 @@
 <!-- nav.html -->
 <nav>
+    <div class="scroll-progress-bar">
+    </div>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -10,77 +12,127 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
     <script>
+        /*
         document.addEventListener('DOMContentLoaded', () => {
-        const stickyNav = document.getElementById('sticky-nav');
-        const showAfter = 100; // 스크롤이 100px 이상일 때 나타남
+            const stickyNav = document.getElementById('sticky-nav');
+            const showAfter = 100; // 스크롤이 100px 이상일 때 나타남
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > showAfter) {
-                stickyNav.style.display = 'block';
-            } else {
-                stickyNav.style.display = 'none';
-            }
-        });
-    });
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > showAfter) {
+                    stickyNav.style.display = 'block';
+                } else {
+                    stickyNav.style.display = 'none';
+                }
+            });
+
+
+
+            window.addEventListener('scroll', () => {
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPosition = window.scrollY;
+                const scrollPercentage = (scrollPosition / scrollHeight) * 100;
+
+                // 모든 선택된 요소에 대해 width를 업데이트
+                scrollProgressBars.forEach((bar) => {
+                    bar.style.width = `${scrollPercentage}%`;
+                });
+            });
+        });*/
     </script>
 </nav>
 
 <style>
-nav {
-    position: fixed; /* 스크롤 시 상단에 고정 */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.9); /* 약간 투명한 배경 */
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
-    z-index: 1000; /* 다른 요소 위에 표시 */
-    display: flex;
-    justify-content: center; /* 가운데 정렬 */
-    align-items: center;
-}
-
-nav ul {
-    list-style: none; /* 기본 리스트 스타일 제거 */
-    padding: 0;
-    margin: 0;
-    display: flex; /* 가로 배열 */
-    gap: 1em; /* 메뉴 간 간격 추가 */
-    flex-wrap: wrap; /* 작은 화면에서 줄바꿈 */
-    justify-content: center; /* 중앙 정렬 유지 */
-}
-
-nav li {
-    margin: 0;
-}
-
-nav a {
-    text-decoration: none; /* 밑줄 제거 */
-    color: #fff; /* 기본 텍스트 색상 */
-    font-size: 1rem; /* 기본 글꼴 크기 */
-    font-weight: bold;
-    padding: 5px 10px; /* 클릭 영역 확대 */
-    border-radius: 5px; /* 약간의 둥근 모서리 */
-    transition: color 0.3s ease, background-color 0.3s ease; /* 부드러운 전환 */
-}
-
-nav a:hover {
-    color: #fff; /* 텍스트 색상 유지 */
-    background-color: #007bff; /* 배경색 변경 */
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        gap: 0px; /* 간격 조정 */
+    .scroll-progress-bar {
+        filter: brightness(100);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        border-end-end-radius: 10px;
+        background-color: #ffffff71;
+        z-index: 10000;
+        width: 0.1%; /* 초기 너비 설정 */
+    }
+    nav {
+        position: fixed;
+        /* 스크롤 시 상단에 고정 */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.4);
+        /* 투명도 감소 */
+        backdrop-filter: blur(10px);
+        /* 배경에 블러 효과 추가 */
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        /* 그림자 추가 */
+        z-index: 1000;
+        /* 다른 요소 위에 표시 */
+        display: flex;
+        justify-content: center;
+        /* 가운데 정렬 */
+        align-items: center;
     }
 
-    nav {
-        padding: 5px; /* 패딩 조정 */
+    nav ul {
+        list-style: none;
+        /* 기본 리스트 스타일 제거 */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* 가로 배열 */
+        gap: 1em;
+        /* 메뉴 간 간격 추가 */
+        flex-wrap: wrap;
+        /* 작은 화면에서 줄바꿈 */
+        justify-content: center;
+        /* 중앙 정렬 유지 */
+    }
+
+    nav li {
+        margin: 0;
     }
 
     nav a {
-        font-size: 70%; /* 작은 화면에서 글자 크기 축소 */
-        padding: 5px 10px; /* 클릭 영역 조정 */
+        text-decoration: none;
+        /* 밑줄 제거 */
+        color: #fff;
+        /* 기본 텍스트 색상 */
+        font-size: 1rem;
+        /* 기본 글꼴 크기 */
+        font-weight: bold;
+        padding: 5px 10px;
+        /* 클릭 영역 확대 */
+        border-radius: 5px;
+        /* 약간의 둥근 모서리 */
+        transition: color 0.3s ease, background-color 0.3s ease;
+        /* 부드러운 전환 */
     }
-}
+
+    nav a:hover {
+        color: #fff;
+        /* 텍스트 색상 유지 */
+        background-color: #007bff;
+        /* 배경색 변경 */
+    }
+
+    @media (max-width: 768px) {
+        nav ul {
+            gap: 0px;
+            /* 간격 조정 */
+        }
+
+        nav {
+            padding: 5px;
+            /* 패딩 조정 */
+        }
+
+        nav a {
+            font-size: 70%;
+            /* 작은 화면에서 글자 크기 축소 */
+            padding: 5px 10px;
+            /* 클릭 영역 조정 */
+        }
+    }
 </style>

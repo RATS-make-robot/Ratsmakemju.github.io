@@ -196,6 +196,7 @@
         </div>
 
         <button id="back-to-top" title="Go to top">⇪</button>
+        <button id="dark-mode-toggle">🌙</button>
 
         </div>
     </main>
@@ -245,6 +246,32 @@
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
+                });
+            });
+
+            // 시스템 설정에 따라 다크모드 설정
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.classList.add('dark-mode');
+            }
+
+            // 다크모드 토글 버튼 기능 추가
+            document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+            });
+
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            // class로 선택된 모든 요소를 가져옴
+            const scrollProgressBars = document.querySelectorAll('.scroll-progress-bar');
+
+            window.addEventListener('scroll', () => {
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPosition = window.scrollY;
+                const scrollPercentage = (scrollPosition / scrollHeight) * 100;
+
+                // 모든 선택된 요소에 대해 width를 업데이트
+                scrollProgressBars.forEach((bar) => {
+                    bar.style.width = `${scrollPercentage}%`;
                 });
             });
         });

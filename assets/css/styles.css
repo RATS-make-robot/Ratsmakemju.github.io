@@ -11,6 +11,7 @@ body {
     word-break: keep-all; /* 한글 단어 끊어짐 방지 */
     white-space: normal; /* 기본 줄바꿈 */
     overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 다크모드 전환 애니메이션 */
 }
 
 @media (max-width: 768px) {
@@ -39,8 +40,12 @@ section {
     border-radius: 10px; /* 더 부드러운 모서리 */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 더 부드럽고 깊이감 있는 그림자 */
     border: 1px solid #90caf9; /* 파란색 테두리 추가 */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* 다크모드 전환 애니메이션 */
+    transition: max-width 2s ease;
 }
-
+section:hover{
+    max-width: 100%;
+}
 section h2 {
     margin-top: 0;
     color: #1e88e5; /* 밝은 파란색 제목 */
@@ -49,6 +54,28 @@ section h2 {
     font-weight: bold;
 }
 
+.cards{
+    color: #333;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px 5px;
+    transition: transform 0.3s;
+    background-color: #ffffff00;
+}
+.link-icon:hover {
+    transform: scale(1.2);
+    /* 아이콘 확대 효과 */
+}
 
 .content {
     display: block;
@@ -80,6 +107,157 @@ section h2 {
     }
 }
 
+
+/* Show the button when visible */
+#back-to-top.visible {
+    display: flex;
+    opacity: 1;
+}
+
+
+/********************************* 다크 모드 스타일 */
+body.dark-mode {
+    background-color: #000000; /* 어두운 배경 */
+    color: #e0e0e0; /* 밝은 텍스트 */
+}
+body.dark-mode section {
+    background: #212121; /* 다크모드 섹션 배경 */
+    border-color: #64b5f6; /* 밝은 파란 테두리 */
+}
+body.dark-mode section h2 {
+    color: #90caf9; /* 다크모드 파란 제목 */
+}
+body.dark-mode .cards {
+    background: #161616; /* 다크모드 카드 배경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 더 진한 그림자 */
+    color: #ffffff;
+}
+body.dark-mode .cards p{
+    color: #e0e0e0;
+}
+
+body.dark-mode .link-icon{
+    background-color: #ffffff;
+}
+body.dark-mode img.link-icon{
+    background-color: #ffffff;
+}
+
+body.dark-mode .competition-title{
+    color: #e0e0e0;
+}
+body.dark-mode .award-list code {
+    background-color: #333333; /* 어두운 회색 배경 */
+    color: #e0e0e0; /* 밝은 텍스트 */
+}
+
+body.dark-mode .link-icon-contact-github{
+    filter: invert(100%) brightness(4);
+}
+
+body.dark-mode #site-header {
+    background-color: #000000;
+}
+
+body.dark-mode .rats-logo {
+    filter: brightness(2);
+}
+
+body.dark-mode .contact-list a {
+    color: #64b5f6;
+}
+
+body.dark-mode .contact-list a:hover {
+    color: #b8dfff;
+}
+body.dark-mode #about {
+    border: 0px solid #90caf9;
+    animation: slideIn 0.8s ease forwards;
+    background-color: #161616; /* 다크 배경 */
+    box-shadow: 0 4px 15px #161616;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body.dark-mode #about-rats h3 {
+    font-size: 1.8rem;
+    color: #81d4fa; /* 밝은 파란색 */
+    margin-bottom: 5px;
+}
+
+body.dark-mode #about-rats p {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* 밝은 회색 */
+    margin-bottom: 20px;
+}
+
+body.dark-mode #why-join-table {
+    text-align: left;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: auto;
+    border: none; /* 테이블 외곽선을 제거 */
+    padding: 1px;
+    background-color: #161616; /* 테이블 배경 어두운 색 */
+}
+
+body.dark-mode #why-join-table th,
+body.dark-mode #why-join-table td {
+    padding: 5px;
+    border: none;
+    text-align: left;
+}
+
+body.dark-mode #why-join-table th {
+    background-color: #161616;
+    color: #e0e0e0; /* 밝은 회색 */
+    font-size: 1rem;
+}
+
+body.dark-mode #why-join-table td {
+    font-size: 0.95rem;
+    color: #e0e0e0; /* 밝은 회색 */
+}
+
+body.dark-mode #why-join-table td b {
+    color: #81d4fa; /* 밝은 파란색 */
+}
+
+
+
+
+
+
+
+
+/*************************************************** Buttons */
+/* Dark mode toggle button styles */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 6rem; /* "Back to Top" 버튼 왼쪽에 배치 */
+    width: 50px;
+    height: 50px;
+    background-color: #1e88e583;
+    backdrop-filter: blur(2px);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    transform: scale(1.1);
+    background-color: #1565c0;
+}
+
 /* Back-to-top button styles */
 #back-to-top {
     position: fixed;
@@ -87,7 +265,8 @@ section h2 {
     right: 2rem;
     width: 50px;
     height: 50px;
-    background-color: #1e88e5;
+    background-color: #1e88e583;
+    backdrop-filter: blur(2px);
     color: white;
     border: none;
     border-radius: 50%;
@@ -117,13 +296,6 @@ section h2 {
         transform: translateY(-10px);
     }
 }
-
-/* Show the button when visible */
-#back-to-top.visible {
-    display: flex;
-    opacity: 1;
-}
-
 /*header*/
 /* Navigation styles */
 /* about styles */

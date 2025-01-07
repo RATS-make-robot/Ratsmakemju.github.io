@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         projectGroup.projects.forEach(project => {
                             const projectCard = document.createElement('div');
                             projectCard.className = 'project-card';
+                            projectCard.classList.add('cards');  // 클래스 추가
 
                             // Create HTML elements for project card
                             const title = document.createElement('h3');

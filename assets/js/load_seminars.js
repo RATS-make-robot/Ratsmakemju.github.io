@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     seminarsData.seminars.forEach(seminar => {
                         const seminarCard = document.createElement('div');
                         seminarCard.className = 'seminar-card';
+                        seminarCard.classList.add('cards');  // 클래스 추가
 
                         seminarCard.innerHTML = `
                             <h3>${seminar.title}</h3>
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p><strong>강의자:</strong> ${seminar.organizer}</p>
                             <p><strong>기간:</strong> ${seminar.period}</p>
                             ${seminar.link ? `<a href="${seminar.link}" target="_blank">
-                                <img src="/assets/images/logos/githublogo.svg" alt="GitHub Link" style="width:50px;height:auto;">
+                                <img src="/assets/images/logos/githublogo.svg" alt="GitHub Link" class="link-icon">
                             </a>` : ''}
                         `;
 

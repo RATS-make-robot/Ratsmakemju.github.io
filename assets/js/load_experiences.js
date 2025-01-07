@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     experiencesData.experiences.forEach(experience => {
                         const experienceCard = document.createElement('div');
                         experienceCard.className = 'experience-card';
+                        experienceCard.classList.add('cards');  // 클래스 추가
                         experienceCard.style.display = 'block';
 
                         // 연도 추가
