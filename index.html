@@ -9,9 +9,10 @@
     <meta property="og:title" content="RATS 홍보페이지">
     <meta property="og:type" content="website">
     <meta property="og:description" content="명지대학교 로봇, 임베디드 중앙동아리 RATS since 1993">
-    <meta property="og:image" content="/assets/images/logos/RATS.svg">
+    <meta property="og:image" content="/assets/images/site/RATS-image.png">
     <meta property="og:url" content="https://join.mju-rats.com/">
     <title>RATS 홍보페이지 - 명지대학교 로봇, 임베디드 중앙동아리</title>
+    <link rel="RATS icon" type="image/x-icon" href="/assets/images/site/RATS.ico">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -243,6 +244,21 @@
             const googleFormLink = "https://forms.gle/your-google-form-link"; // Replace with your Google Form link
             window.open(googleFormLink, "_blank");
         }
+        document.addEventListener("DOMContentLoaded", function () {
+            // class로 선택된 모든 요소를 가져옴
+            const scrollProgressBars = document.querySelectorAll('.scroll-progress-bar');
+
+            window.addEventListener('scroll', () => {
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPosition = window.scrollY;
+                const scrollPercentage = (scrollPosition / scrollHeight) * 100;
+
+                // 모든 선택된 요소에 대해 width를 업데이트
+                scrollProgressBars.forEach((bar) => {
+                    bar.style.width = `${scrollPercentage}%`;
+                });
+            });
+        });
 
         // Back-to-top button functionality
         document.addEventListener("DOMContentLoaded", function () {
@@ -275,21 +291,6 @@
                 document.body.classList.toggle('dark-mode');
             });
 
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            // class로 선택된 모든 요소를 가져옴
-            const scrollProgressBars = document.querySelectorAll('.scroll-progress-bar');
-
-            window.addEventListener('scroll', () => {
-                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const scrollPosition = window.scrollY;
-                const scrollPercentage = (scrollPosition / scrollHeight) * 100;
-
-                // 모든 선택된 요소에 대해 width를 업데이트
-                scrollProgressBars.forEach((bar) => {
-                    bar.style.width = `${scrollPercentage}%`;
-                });
-            });
         });
     </script>
     <!--<script src="assets/js/filter_projects.js"></script>-->
