@@ -57,25 +57,6 @@
         /* hover 시 애니메이션 일시 중지 */
     }
 
-    .project-card {
-       /* padding: 10px;*/
-        flex: 0 0 auto;
-        /* 카드 크기 고정 */
-        max-width: 300px;
-        width: 40%;
-        min-height: 250px;
-        /* 최소 높이 */
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-        /*animation: scroll-loop 20s linear infinite;*/
-    }
-
-    .project-card:hover {
-        transform: translateY(-10px) scale(1.05);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        
-        animation-play-state: paused;
-    }
 
     .project-group::-webkit-scrollbar {
         height: 6px;
@@ -97,15 +78,25 @@
         /* 스크롤바 호버 색상 */
     }
 
-    .project-btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+
+    .project-card {
+       /* padding: 10px;*/
+        flex: 0 0 auto;
+        /* 카드 크기 고정 */
+        max-width: 300px;
+        width: 40%;
+        min-height: 250px;
+        /* 최소 높이 */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        /*animation: scroll-loop 20s linear infinite;*/
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        
+        animation-play-state: paused;
     }
 
     .project-card h3 {
@@ -127,9 +118,25 @@
         border-radius: 5px;
         margin-bottom: 15px;
         /* 이미지와 텍스트 간 간격 */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+
+        object-fit: cover; /* 이미지가 영역에 맞게 늘어남 */
+        transition: transform 0.3s ease-out;
+    }
+    .project-image:hover{
+        position: sticky;
+        transform: scale(1.5);
+    }
+    
+    @keyframes image-scale {
+        0% {}
+
+        100% {
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
+        }
+    }
     .project-card p {
         text-align: center;
         font-size: 1rem;
@@ -149,6 +156,16 @@
         margin-top: 15px;
     }
 
+    .project-btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
     @keyframes scroll-left {
         0% {
             transform: translateX(0);
