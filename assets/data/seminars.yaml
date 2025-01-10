@@ -40,6 +40,12 @@
 # ==============================================================================
 
 seminars:
+  - title: "2025 RATS 겨울 세미나 "
+    description: "KiCad를 활용한 PCB 설계 세미나"
+    organizer: "김영찬"
+    period: "2025년 1월"
+    #image: "assets/images/sections/seminars/2025/pcb.jpg"
+
   - title: "2024 ATmega128A Register"
     description: "ATmega128A 레지스터 세미나(지능형센서응용 대비)"
     organizer: "김영찬"
@@ -59,15 +65,15 @@ seminars:
     image: "assets/images/sections/seminars/2024/circuit.jpg"
 
   - title: "2024 신입생 C언어, CubeIDE 세미나"
-    description: ""
+    description: "라인트레이서 프로그래밍을 위한 C언어, STM32를 다루기 위한 CubeIDE 실습 세미나"
     organizer: "곽 샘, 최수민, 이승준, 박인영, 정보근, 이준영"
     period: "2024년 3/25, 3/26, 4/1, 4/2"
     image: "assets/images/sections/seminars/2024/c.jpg"
 
-  - title: "2024 신입생 OT"
-    description: ""
-    organizer: "회장단"
-    period: "2023년 3월"
+  - title: "2024 RATS 신입생 OT"
+    description: "동아리에 대한 전반적인 설명, 프로젝트 진행 및 신입생 교육과정에 대해 소개했습니다."
+    organizer: "2024 RATS 회장단"
+    period: "2024년 3월 18일"
     image: "assets/images/sections/seminars/2024/ot.jpg"
 
   - title: "2024 CubeIDE"
@@ -77,7 +83,7 @@ seminars:
     image: "assets/images/sections/seminars/2024/stm32.jpg"
 
   - title: "2024 RATS 겨울 세미나"
-    description: "리눅스 - 명령어, 컴파일, 디버깅 등"
+    description: "리눅스 기초 - 명령어, 컴파일, 디버깅 등"
     organizer: "김영찬"
     period: "2023년 12월"
     image: "assets/images/sections/seminars/2023/linux.jpg"
@@ -88,13 +94,20 @@ seminars:
     period: "2023년 9월"
     image: "assets/images/sections/seminars/2023/mcu.jpg"
 
+  - title: "2023 Git, GitHub 세미나"
+    description: ""
+    organizer: "이은규"
+    period: "2023년 9월"
+    image: "assets/images/sections/seminars/2023/git.jpg"
+
   - title: "2023 RATS 여름 세미나"
     description: "ATmega128A - 지능형 센서 응용"
     organizer: "김영찬"
     period: "2023년 8월"
+    image: "assets/images/sections/seminars/2023/atmega.jpg"
 
   - title: "2023 신입생 회로도, 소자, 납땜 세미나"
-    description: ""
+    description: "40분간 회로도 읽기, 소자 선정, 납땜이 가능하도록 세미나 진행 후 각자 라인트레이서 제작 시작"
     organizer: "김영찬"
     period: "2023.04.03, 04, 05, 06"
     image: "assets/images/sections/seminars/2023/soldering.jpg"
@@ -105,10 +118,10 @@ seminars:
     period: "2023년 3, 4월"
     image: "assets/images/sections/seminars/2023/c.jpg"
 
-  - title: "2023 신입생 OT"
-    description: ""
-    organizer: "회장단"
-    period: "2023년 3월"
+  - title: "2023 RATS 신입생 OT"
+    description: "동아리에 대한 전반적인 설명, 프로젝트 진행 및 신입생 교육과정에 대해 소개했습니다."
+    organizer: "2023 RATS 회장단"
+    period: "2023년 3월 21일"
     image: "assets/images/sections/seminars/2023/ot.jpg"
 
   - title: "2023 SOLIDWORKS 세미나"
