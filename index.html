@@ -246,9 +246,9 @@
         }
         document.addEventListener("DOMContentLoaded", function () {
             // class로 선택된 모든 요소를 가져옴
-            const scrollProgressBars = document.querySelectorAll('.scroll-progress-bar');
 
             window.addEventListener('scroll', () => {
+            const scrollProgressBars = document.querySelectorAll('.scroll-progress-bar');
                 const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
                 const scrollPosition = window.scrollY;
                 const scrollPercentage = (scrollPosition / scrollHeight) * 100;
