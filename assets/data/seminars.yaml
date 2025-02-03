@@ -44,7 +44,7 @@ seminars:
     description: "KiCad를 활용한 PCB 설계 세미나"
     organizer: "김영찬"
     period: "2025년 1월"
-    #image: "assets/images/sections/seminars/2025/pcb.jpg"
+    image: "assets/images/sections/seminars/2025/pcb.png"
 
   - title: "2024 ATmega128A Register"
     description: "ATmega128A 레지스터 세미나(지능형센서응용 대비)"
